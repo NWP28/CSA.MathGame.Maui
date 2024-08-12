@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MathGame.Maui.MainPage"
+             BackgroundImageSource="chalk_bg.jpg">
+
+    <ContentView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="50"
+            >
+            <Label
+                Text = "Math Game" 
+                FontSize="42"
+                HorizontalOptions="Center"
+                />
+            <Label
+                Text = "What game would you like to play?"
+                FontSize="42"
+                HorizontalOptions="Center"
+                />
+
+            <Grid RowDefinitions="*,100"
+                  ColumnDefinitions="*,*,*,*">
+
+                <Button Grid.Column="0"
+                    Margin="5,5"
+                    Text="Addition"
+                        FontSize="30"
+                    Clicked="OnGameChosen"/>
+                <Button Grid.Column="1"
+                    Margin="5,5"
+                    Text="Subtraction"
+                        FontSize="30"
+                    Clicked="OnGameChosen"/>
+                <Button Grid.Column="2"
+                    Margin="5,5"
+                    Text="Multiplication"
+                        FontSize="30"
+                    Clicked="OnGameChosen"/>
+                <Button Grid.Column="3"
+                    Margin="5,5"
+                    Text="Division"
+                        FontSize="30"
+                    Clicked="OnGameChosen"/>
+
+                <Button Grid.Row="1"
+                    Grid.ColumnSpan="4"
+                    BackgroundColor="ForestGreen"
+                    Margin="5,5"
+                    Text="View Game History" 
+                        FontSize="30"
+                    Clicked="OnViewGameHistory"/>
+
+            </Grid>
+
+        </VerticalStackLayout>
+    </ContentView>
+
+</ContentPage>
