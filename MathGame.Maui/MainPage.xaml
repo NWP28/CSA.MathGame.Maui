@@ -10,7 +10,7 @@
             Padding="50"
             >
             <Label
-                Text = "Math Game" 
+                Text = "Simple Math Game" 
                 FontSize="42"
                 HorizontalOptions="Center"
                 />
